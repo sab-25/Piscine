@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+
+    <h1>Calculatrice</h1>
+
+    <form id="calculator-form">
+        
+        <input type="text" id="left_operand" placeholder="Membre gauche" required>
+
+               <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+               <input type="text" id="right_operand" placeholder="Membre droit" required>
+
+        <!-- Input submit -->
+        <input type="submit" value="Try me!">
+    </form>
+    <h2>Résultat : <span id="result">0</span></h2>
+
+    <script>
+        document.getElementById("calculator-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupération des valeurs
+            let leftOperand = parseFloat(document.getElementById("left_operand").value);
+            let rightOperand = parseFloat(document.getElementById("right_operand").value);
+            let operator = document.getElementById("operator").value;
+
+            let result;
+
+                        switch(operator) {
+                case '+':
+                    result = leftOperand + rightOperand;
+                    break;
+                case '-':
+                    result = leftOperand - rightOperand;
+                    break;
+                case '*':
+                    result = leftOperand * rightOperand;
+                    break;
+                case '/':
+                    if (rightOperand !== 0) {
+                        result = leftOperand / rightOperand;
+                    } else {
+                        result = "Erreur : Division par zéro";
+                    }
+                    break;
+                case '%':
+                    result = leftOperand % rightOperand;
+                    break;
+                default:
+                    result = "Opérateur non valide";
+            }
+
+            document.getElementById("result").textContent = result;
+        });
+    </script>
+
+</body>
+</html>

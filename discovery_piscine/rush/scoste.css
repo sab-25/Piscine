@@ -1,0 +1,146 @@
+body,html
+{
+    margin: 0;
+    padding: 0;
+}
+
+.lc_container
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.lc_cv
+{
+    display: flex;
+    width: 300%;
+    height: 300%;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+.page_cv
+{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.lc_presentation
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://imgs.search.brave.com/w4uo1hOaDGdP5eroNzIzyosrlZKUsbFm7LyMn2PS_Rg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXIuZm9yZnVu/LmNvbS9mZXRjaC9j/ZS9jZTc0NDNlZWYz/NzlmNGE5MzM4YTk5/ZWJiY2E4YzhhMC5q/cGVn");
+    background-size: cover;
+    background-position: center;
+}
+.lc_experience
+{
+    display: flex;
+    background-color: rgb(167, 69, 8);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+.title
+{
+    font-family: 'Tahoma', sans-serif;
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 0px; 
+    background-color: transparent;
+}
+.row 
+{
+display: flex;
+font-family: 'Tahoma', sans-serif;
+font-size: 4rem;
+font-weight: bold;
+color: #ffffff;
+text-align: center;
+margin: 20px 10px;
+padding: 10px; 
+background-color: transparent;
+}
+.presentation :left {
+
+    font-family: 'Tahoma', sans-serif;
+    flex: 1
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px; 
+    background-color: transparent;
+}
+.presentation :right {
+
+    font-family: 'Tahoma', sans-serif;
+    display: flex;
+    flex: 1
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px; 
+    background-color: transparent;
+}
+.contact {
+    display: flex;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 10px; 
+    background-color: transparent;
+}
+
+.lc_contact
+{
+    background-color: rgb(54, 51, 164);
+}
+.pres {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+h1 {
+    display: flex;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0b0000;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 10px; 
+    background-color: transparent;
+}
+h2 {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fefefe;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px; 
+    background-color: transparent;
+}

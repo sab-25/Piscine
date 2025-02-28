@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veuillez souffler dans le ballon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .ballon {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ballon"></div>
+
+    <script>
+        const ballon = document.querySelector('.ballon');
+        let taille = 200;
+        let couleurs = ['red', 'green', 'blue'];
+        let couleurIndex = 0;
+
+        ballon.addEventListener('click', () => {
+                       taille += 10;
+                        if (taille > 420) {
+                taille = 200;
+            }
+                        couleurIndex = (couleurIndex + 1) % couleurs.length;
+            ballon.style.width = `${taille}px`;
+            ballon.style.height = `${taille}px`;
+            ballon.style.backgroundColor = couleurs[couleurIndex];
+        });
+
+        ballon.addEventListener('mouseleave', () => {
+                        if (taille > 200) {
+                taille -= 5;
+            }
+            
+            couleurIndex = (couleurIndex - 1 + couleurs.length) % couleurs.length;
+            ballon.style.width = `${taille}px`;
+            ballon.style.height = `${taille}px`;
+            ballon.style.backgroundColor = couleurs[couleurIndex];
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            height: 100vh;
+            padding: 60px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .colonne1 {
+            background-color: lightgreen;
+        }
+        .colonne2 {
+            background-color: lightpink;
+        }
+        body {
+            margin: 0;
+        }
+    

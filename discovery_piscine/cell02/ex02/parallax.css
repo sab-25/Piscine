@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  
+  .background-image {
+    background-image: url('https://imgs.search.brave.com/Wt9Xo-pUkAJBw-MDkJb1JUO9KxGfp4TpmAquo0WpnMw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cGhvdG9zLXByZW1p/dW0vb2NlYW4tc29t/YnJlLW9yYWdldXgt/cGF5c2FnZS1tYXJp/dGltZS1kcmFtYXRp/cXVlLW1lci1lbnJh/Z2VlLXBheXNhZ2Ut/bWFyaW4tb3JhZ2V1/eF8xMjQzOTA1LTMy/MS5qcGc_c2VtdD1h/aXNfaHlicmlk');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .background-image::after {
+    content: "Evasion";
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   
+   .content {
+    height: 1500px;
+    padding: 20px;
+  }
+  
+  .second-image {
+    background-image: url('https://imgs.search.brave.com/2LeK6cD3mnMbN1zS593Qs3DTn2Rak7f6Gns4znnROeY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ1/MjczODQ3OS9mci9w/aG90by9wbG9uZ2V1/ci1zdXItdW4tciVD/MyVBOWNpZi0lQzMl/QTAtYXFhYmEuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTVC/UmRmTFpUUE44c3Nx/c01QMWp2ajBXTXhR/MW5zcXVaMmdleHdh/aDFnMmc9');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  .second-image::after {
+    content: "Sous la surface !";
+    font-size: 30px;
+    color: white;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
